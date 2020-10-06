@@ -1,6 +1,12 @@
+body{
+background: orange
+}
+
+
 h1 {
 text-align: center;
 margin-top: 10%;
+color: white;
 }
 
 ul p small{
@@ -9,4 +15,8 @@ text-align: center;
 
 img {
 margin-left: 50%;
+}
+
+#modal{
+margin-left: 40%;
 }

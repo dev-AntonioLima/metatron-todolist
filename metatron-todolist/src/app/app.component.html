@@ -1,46 +1,46 @@
 '<h1 class="title animated rubberBand">{{title}}</h1>
 
-<ul class="animated flipInX" *ngIf="mode=='list'">
+<ul class="animated-flipInX" *ngIf="mode=='list'">
   <!-- Essa mensagem será exibida se não houver nenhuma tarefa inserida. -->
-  <p class="text-center" *ngIf="todos.length==0">
-    <small>
-      Você não tem nenhuma tarefa hoje!
-    </small>
-  </p>
+<p class="text-center" *ngIf="todos.length==0">
+<small>
+NÃO EXISTEM TAREFAS DE HOJE
+</small>
+</p>
 
 
-  <li *ngFor="let todo of todos">
-  {{ todo.title }}
-    <button (click)="remove(todo)"><i class="far fa-trash-alt"></i></button>
-    <button *ngIf="!todo.done" (click)="markAsDone(todo)"><i class="far fa-check-circle"></i></button>
-    <button *ngIf="todo.done" (click)="markAsUndone(todo)"><i class="fas fa-check-circle"></i></button>
-  </li>
+<li *ngFor="let todo of todos">
+{{ todo.title }}
+  <button (click)="remove(todo)"><i class="far fa-trash-alt"></i></button>
+  <button *ngIf="!todo.done" (click)="markAsDone(todo)"><i class="far fa-check-circle"></i></button>
+  <button *ngIf="todo.done" (click)="markAsUndone(todo)"><i class="fas fa-check-circle"></i></button>
+</li>
 </ul>
 
 
 <!-- reactive forms do angular -->
 
-
 <div id="modal" *ngIf="mode=='add'" class="animated flipInX">
-  <h1 class="text-center">Nova tarefa</h1>
-  <form [formGroup]="form">
-    <input type="text" placeholder="Título da tarefa" maxlength="60" formControlName="title">
-    <small class="danger" *ngIf="form.controls.title.invalid && !form.controls.title.pristine">Este campo deve conter entre 3 e 60
-      caracteres <br> </small>
-    <p class="text-center">
-      <button class="button" [disabled]="form.invalid" (click)="add()" class="button"> <i class="far fa-save"></i> Salvar</button>
-    </p>
+<h1 class="text-center">Nova tarefa</h1>
+<form [formGroup]="form">
+<input type="text" placeholder="Tarefa" maxlength="60" formControlName="title">
+<small class="danger" *ngIf="form.controls.title.invalid && !form.controls.title.pristine">Este campo deve conter entre 3 e 60
+caracteres <br> </small>
 
-  </form>
-  <br><br>
+<p class="text-center">
+<button class="button" [disabled]="form.invalid" (click)="add()" class="button"> <i class="far fa-save"></i> Salvar Tarefa</button>
+</p>
+
+</form>
+<br><br>
 </div>
 
 <button class="add-button animated fadeInUp button" (click)="changeMode('add')" *ngIf="mode=='list'">
-  <i class="fas fa-plus-circle"></i>
-  Nova Tarefa
+<i class="fas fa-plus-circle"></i>
+Nova Tarefa
 </button>
 
 <button class="add-button animated fadeInUp button" (click)="changeMode('list')" *ngIf="mode=='add'">
-  <i class="fas fa-timer"></i>
-  Cancelar
+<i class="fas fa-timer"></i>
+Cancelar Tarefa
 </button>

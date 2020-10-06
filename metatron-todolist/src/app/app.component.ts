@@ -10,7 +10,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 export class AppComponent {
   public mode: string = 'list';
   public todos: Todo[] = [];
-  public title: String = 'Lista de Tarefas:';
+  public title: String = 'METATRON - LISTA DE TAREFAS';
   public form: FormGroup;
 
 
@@ -27,7 +27,7 @@ export class AppComponent {
       //Validators são validações.
 
       //Validators fica dentro de um array. Se você for usar apenas 1 item você pode usar apenas o Validators.required, se for usar 2 itens ou mais usar em conjunto o Validators.compose
-      
+
       title: ['', Validators.compose([
         Validators.minLength(3),
         Validators.maxLength(60),
@@ -48,7 +48,7 @@ export class AppComponent {
     //this.todos.length + 1 = Atribui um número ao id que será informado
     const id = this.todos.length + 1;
 
-    //chamando o mensagem que foi digitada com os atributos id, 
+    //chamando o mensagem que foi digitada com os atributos id,
     //texto da mensagem e inicializando-a como a ser feita.
     this.todos.push(new Todo(id, title, false));
 
@@ -100,7 +100,7 @@ export class AppComponent {
 
     //validando se os dados não vieram nulos do LocalStorage
     if (data){
-    //JSON.parse = Converte uma string em um JSON  
+    //JSON.parse = Converte uma string em um JSON
     this.todos = JSON.parse(data)
     } else {
     this.todos = [];
