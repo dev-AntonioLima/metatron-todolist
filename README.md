@@ -2,5 +2,5 @@
 Repositório destinado ao processo seletivo da Metatron.
 
 <p align="center">
-<img src="img/metatron.png">
+<img src="img/metatron.png" width="250px">
 </p>
