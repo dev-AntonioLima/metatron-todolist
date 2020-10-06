@@ -1,11 +1,11 @@
 '<h1 class="title animated rubberBand">{{title}}</h1>
 
+
+<div class="campo-tarefas">
 <ul class="animated-flipInX" *ngIf="mode=='list'">
   <!-- Essa mensagem será exibida se não houver nenhuma tarefa inserida. -->
-<p class="text-center" *ngIf="todos.length==0">
-<small>
+<p *ngIf="todos.length==0">
 NÃO EXISTEM TAREFAS DE HOJE
-</small>
 </p>
 
 
@@ -21,7 +21,6 @@ NÃO EXISTEM TAREFAS DE HOJE
 <!-- reactive forms do angular -->
 
 <div id="modal" *ngIf="mode=='add'" class="animated flipInX">
-<h1 class="text-center">Nova tarefa</h1>
 <form [formGroup]="form">
 <input type="text" placeholder="Tarefa" maxlength="60" formControlName="title">
 <small class="danger" *ngIf="form.controls.title.invalid && !form.controls.title.pristine">Este campo deve conter entre 3 e 60
@@ -44,3 +43,5 @@ Nova Tarefa
 <i class="fas fa-timer"></i>
 Cancelar Tarefa
 </button>
+
+</div>

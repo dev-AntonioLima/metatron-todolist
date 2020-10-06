@@ -2,21 +2,24 @@ body{
 background: orange
 }
 
-
 h1 {
 text-align: center;
 margin-top: 10%;
 color: white;
 }
 
-ul p small{
-text-align: center;
-}
-
 img {
 margin-left: 50%;
 }
 
-#modal{
+.campo-tarefas{
 margin-left: 40%;
+margin-right: 40%;
+background-color: rgba(17, 17, 17, 0.466);
+padding: 2%;
+border-radius: 5%;
+}
+
+.campo-tarefas ul p{
+color: white;
 }
