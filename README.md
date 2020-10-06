@@ -9,5 +9,5 @@ Repositório destinado ao processo seletivo da Metatron.
 <p>Desenvolver preferencialmente em Angular utilizando algum framework de preferência Material ou ReactJS.</p>
 
 <p align="center">
-<img src="img/metatron.gif.gif" width="250px">
-</p>
+<img src="img/metatron.gif.gif" height="500px" width="500px">
+</
