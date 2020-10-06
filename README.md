@@ -7,3 +7,7 @@ Repositório destinado ao processo seletivo da Metatron.
 
 <h2>Front-End<h2>
 <p>Desenvolver preferencialmente em Angular utilizando algum framework de preferência Material ou ReactJS.</p>
+
+<p align="center">
+<img src="img/metatron.gif" width="250px">
+</p>
