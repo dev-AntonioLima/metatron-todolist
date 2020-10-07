@@ -1,6 +1,6 @@
 # metatron-todolist
-#Repositório destinado ao processo seletivo da Metatron.
-#Entrega: 07/10/2020
+<h1>Repositório destinado ao processo seletivo da Metatron.<h1>
+<h2>Entrega: 07/10/2020<h2>
 
 <p align="center">
 <img src="img/metatron.png" width="250px">
