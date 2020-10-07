@@ -1,5 +1,4 @@
-# metatron-todolist
-<h1>Repositório destinado ao processo seletivo da Metatron.<h1>
+Repositório destinado ao processo seletivo da Metatron.
 <h2>Entrega: 07/10/2020<h2>
 
 <p align="center">
